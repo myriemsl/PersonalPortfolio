@@ -1,0 +1,446 @@
+/*/ Global /*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body {
+    background-color: rgba(12, 10, 22, 0.904);  
+}
+
+
+
+/*/ Scrollbar /*/
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+ background-color: #ecd0fa10;
+}
+
+/*/ Handle /*/
+::-webkit-scrollbar-thumb {
+  background: #d0a2e7;
+  border-radius: 5px;
+}
+
+
+
+
+/*/ App /*/
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/*/ Navbar /*/
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em;
+}
+
+
+
+/*/ Container /*/
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/*/ Home /*/
+
+  .homedescription h1 {
+    margin: 9px 0;
+    font-size: 2.5em;
+    color: #f1edf3;
+    font-weight:lighter;
+  }
+  
+  .homedescription span {
+    letter-spacing: 0.2em;
+    color: #d0a2e7;
+  }
+  .homedescription h6 {
+    color: #d0a2e7;
+    font-weight: lighter;
+  }
+
+  .quote {
+    text-align: center;
+     margin-top: 4em;
+     color: #d0a2e7bc;
+   }
+
+  .quote h2 {
+    font-size: 1.5em;
+  }
+
+  .quote h2 , h6 {
+    font-weight: 300;
+  }
+
+
+
+/*/ About /*/
+.about , .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em;
+  }
+
+.abouttitle , .skillstitle {
+    margin: 1rem;
+    color: #d0a2e7;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+
+
+.aboutdescription p {
+    font-size: 1em;
+    color: #f1edf3;
+    z-index: 10;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+
+
+  .skillsbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill {
+    border: 1px solid #ecd0fa10;
+    border-radius: 0.1em;
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+  } 
+ 
+.skill h5 {
+  letter-spacing: 0.1em;
+  color: #ecd0fa;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.skillicon {
+  margin: 0.5em;
+  color: #ecd0fa;
+  font-size: 1.5em;
+}
+
+
+
+
+/*/ Projects /*/
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em ;
+}
+.projectstitle {
+  margin: 1em;
+  color: #d0a2e7;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  text-align: center;
+}
+ .cards {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 1em;
+ }
+
+.card {
+  border: 1px solid #ecd0fa10;
+  border-radius: 0.1em;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+  z-index: 10;
+ }
+
+ .card p {
+   margin: 1em 0;
+   letter-spacing: 0.1em;
+   color: #f1edf3;
+   font-size: 1em;
+ }
+
+ .card h5 {
+      font-size: 0.8em;
+      color: #ecd0fa;
+      
+ }
+
+ .card h5 a {
+   text-decoration: none;
+   color: #ecd0fa;
+   letter-spacing: 0.1em;
+ }
+
+  .card h5 a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/*/ Footer /*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.footerdetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7em;
+  font-weight: lighter;
+}
+
+.footerdetails div {
+  margin: auto 2em;
+}
+
+.footerdetails h6 {
+  color: #ecd0fa;
+  font-size: 0.8em;
+}
+
+.footerdetails h5 {
+  color: #d0a2e7;
+  margin: 4px 0;
+  font-size: 1.2em;
+}
+
+.footercopyright h6 {
+  font-weight: lighter;
+  color: #f1edf3;
+}
+.socialicon {
+  font-size: 0.7em;
+  color: #d0a2e7;
+  z-index:10;
+}
+
+/*/ Responsive /*/
+/*/ Navbar /*/
+@media (max-width:700px) {
+ .navbar {
+  margin: 1em;
+} 
+}
+
+
+/*/ Home /*/
+@media (max-width:700px) {
+  .homedescription h1 {
+    font-size: 2em;
+  }
+  .quote h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width:550px) {
+  .homedescription h1 {
+    font-size: 1.7em;
+  }
+
+  .quote {
+    margin-top: 3em;
+  }
+  .quote h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width:450px) {
+  .homedescription h1 {
+    font-size: 1.3em;
+  }
+
+}
+
+@media (max-width:350px) {
+  .homedescription h1 {
+    font-size: 1em;
+  }
+}
+
+
+/*/ About /*/
+@media (max-width:825px) {
+  .skill {
+    padding: 1.3em;
+    margin: 0.5em;
+  } 
+  .skill h5 {
+    font-size: 0.8em;
+  }
+  .skillicon {
+    font-size: 1.2em;
+  }
+}
+
+  @media (max-width:600px) {
+    .abouttitle , .skillstitle, .projectstitle {
+      font-size: 1rem;
+    }
+    .skill {
+      padding: 1em;
+    } 
+    .skill h5 {
+      font-size: 0.7em;
+    }
+    .skillicon {
+      font-size: 1em;
+    }
+ }
+  
+  
+  @media (max-width:485px) {
+    .abouttitle , .skillstitle, .projectstitle {
+      font-size: 0.8em;
+    }
+    .skill {
+      padding: 0.9em;
+      margin: 0.3em;
+    } 
+
+    .aboutdescription p {
+      font-size: 0.8em;
+      letter-spacing: normal;
+    }
+
+  }
+
+  @media (max-width:375px) {
+
+    .aboutdescription p {
+      font-size: 0.7em;
+    }
+  }
+
+  
+  /*/ Projects /*/
+  @media (max-width:905px) {
+    .projects {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width:510px) {
+    .cards {
+      margin: 0.8em;
+    }
+    .card {
+      margin: 0.2em;
+    }
+    .card p {
+      font-size: 0.8em;
+    }
+   
+    .card h5 {
+         font-size: 0.7em;
+    }
+  }
+
+  @media (max-width:310px) {
+    .cards {
+      margin: 0.6em;
+    }
+    .card {
+      margin: 0.1em;
+    }
+    .card p {
+      font-size: 0.6em;
+    }
+   
+    .card h5 {
+         font-size: 0.6em;
+    }
+  }
+
+@media (max-width:600px) {
+
+  .social .socialicon {
+    font-size: 1em;
+  }
+ 
+}
+
+/*/ Footer /*/
+@media (max-width:900px) {
+  .footerdetails div {
+    margin: auto 1.3em;
+  }
+  .footerdetails h5 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width:775px) {
+  .footerdetails div {
+    margin: auto 1em;
+  }
+  .footerdetails h5 {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:700px) {
+  .footerdetail {
+    display: none;
+  }
+}
+
+@media (max-width:510px) {
+  .footerdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footerdetails div {
+    margin: 1em 0;
+  }
+}
+
+
+
+
+
+ 
